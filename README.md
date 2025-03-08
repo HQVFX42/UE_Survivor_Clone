@@ -3,6 +3,9 @@
 
 ## Data
 
-### Data Table
+### Setup
+- [DataTable](dataTables.h)
+- [GameData](dataGame.h)
 
-### Load Data
+### Load
+- [Manager](plyctrMaingame.cpp)
