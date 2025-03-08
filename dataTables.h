@@ -11,22 +11,22 @@ struct FdataLangMenu : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tKor;
+	FString tKor;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tEng;
+	FString tEng;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tChn;
+	FString tChn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tJpn;
+	FString tJpn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tRss;
+	FString tRss;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString tSpn;
+	FString tSpn;
 };
 
 USTRUCT(BlueprintType)
@@ -35,7 +35,7 @@ struct FSpriteTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strPath;
+	FString strPath;
 };
 
 USTRUCT(BlueprintType)
@@ -44,7 +44,7 @@ struct FTextureTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		UTexture2D* sprite;
+	UTexture2D* sprite;
 };
 
 USTRUCT(BlueprintType)
@@ -53,10 +53,10 @@ struct FEquipLevelTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valStart;
+	FString valStart;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valUpgrade;
+	FString valUpgrade;
 };
 
 USTRUCT(BlueprintType)
@@ -65,16 +65,16 @@ struct FEquipClassTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int maxLevel;
+	int maxLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valNeed;
+	FString valNeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valChunk;
+	FString valChunk;
 };
 
 USTRUCT(BlueprintType)
@@ -83,13 +83,13 @@ struct FGoodsTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valShame;
+	int valShame;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secGoods;
+	int secGoods;
 };
 
 USTRUCT(BlueprintType)
@@ -98,13 +98,13 @@ struct FTeamLevelTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valEXP;
+	int valEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxReward;
+	FString idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valReward;
+	FString valReward;
 };
 
 USTRUCT(BlueprintType)
@@ -113,19 +113,19 @@ struct FHeroLevelTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float spdMove;
+	float spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valPower;
+	int valPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valHP;
+	int valHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valMoney;
+	int valMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valTreasure;
+	int valTreasure;
 };
 
 USTRUCT(BlueprintType)
@@ -134,28 +134,28 @@ struct FMonsterTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float spdMove;
+	float spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valHP;
+	int valHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secMove;
+	int secMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valPower;
+	int valPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secDefAttack;
+	int secDefAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxDefAttack;
+	int idxDefAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timDefAttack;
+	float timDefAttack;
 };
 
 USTRUCT(BlueprintType)
@@ -164,34 +164,34 @@ struct FBulletTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strPath;
+	FString strPath;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secDamage;
+	int secDamage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secMove;
+	int secMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secRot;
+	int secRot;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secBounceHit;
+	int secBounceHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secBounceOut;
+	int secBounceOut;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secAfterHit;
+	int secAfterHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secTimeout;
+	int secTimeout;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxAfterHit;
+	int idxAfterHit;
 };
 
 USTRUCT(BlueprintType)
@@ -200,19 +200,19 @@ struct FItemTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSprite;
+	int idxSprite;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secItem;
+	int secItem;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSlot;
+	int idxSlot;
 };
 
 
@@ -222,55 +222,55 @@ struct FWeaponTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxHeroSpr;
+	int idxHeroSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxWeaponSpr;
+	int idxWeaponSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perPower;
+	FString perPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString spdMove;
+	FString spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString timOutMove;
+	FString timOutMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secAttack;
+	int secAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString timAttack;
+	FString timAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxbullet; //
+	FString idxbullet; //
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString bulSame;
+	FString bulSame;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString bulCombo;
+	FString bulCombo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString timCombo;
+	FString timCombo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valScale;
+	FString valScale;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxDual;
+	FString idxDual;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxCombine;
+	int idxCombine;
 
 };
 
@@ -280,16 +280,16 @@ struct FBuffTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valLevel;
+	FString valLevel;
 };
 
 
@@ -299,55 +299,55 @@ struct FStageTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valWave;
+	int valWave;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString timStart;
+	FString timStart;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString timEnd;
+	FString timEnd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxMonster;
+	FString idxMonster;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString maxSpawn;
+	FString maxSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valSpawn;
+	FString valSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString secSpawn;
+	FString secSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perPower;
+	FString perPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perSpeed;
+	FString perSpeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perHP;
+	FString perHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxEXP;
+	FString idxEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perEXP;
+	FString perEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxMoney;
+	FString idxMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString perMoney; 
+	FString perMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString colMonster; 
+	FString colMonster;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxReward;
+	FString idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valReward;
+	FString valReward;
 };
 
 USTRUCT(BlueprintType)
@@ -356,7 +356,7 @@ struct FGameLevelTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valEXP;
+	int valEXP;
 };
 
 USTRUCT(BlueprintType)
@@ -365,7 +365,7 @@ struct FCameraTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float valHeight;
+	float valHeight;
 };
 
 USTRUCT(BlueprintType)
@@ -374,22 +374,22 @@ struct FMarketTreasureTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isAD;
+	bool isAD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxItem;
+	int idxItem;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lstIdx;
+	TArray<int> lstIdx;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lstVal;
+	TArray<int> lstVal;
 };
 
 USTRUCT(BlueprintType)
@@ -398,25 +398,25 @@ struct FMarketDummyTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		UTexture2D* sprite;
+	UTexture2D* sprite;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isFree;
+	bool isFree;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isAD;
+	bool isAD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EPAYSection::Type> secPayble;
+	TEnumAsByte<EPAYSection::Type> secPayble;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valPay;
+	int valPay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EPAYSection::Type> secGet;
+	TEnumAsByte<EPAYSection::Type> secGet;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valGet;
+	int valGet;
 };
 
 USTRUCT(BlueprintType)
@@ -425,16 +425,16 @@ struct FEvolutionListTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString lstIdxPay;
+	FString lstIdxPay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString lstValPay;
+	FString lstValPay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString lstIdxGet;
+	FString lstIdxGet;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString lstValGet;
+	FString lstValGet;
 };
 
 USTRUCT(BlueprintType)
@@ -443,13 +443,13 @@ struct FEvolutionInfoTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strNAme;
+	FString strNAme;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 };
 
 USTRUCT(BlueprintType)
@@ -458,8 +458,8 @@ struct FChallengeInfoTable : public FTableRowBase
 	GENERATED_USTRUCT_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString idxReward;
+	FString idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString valReward;
+	FString valReward;
 };

@@ -10,7 +10,7 @@
 #define MAX_PAYBLE			9		// 재화 아이템 갯 수
 
 #define PAYBLE_MONEY		0		// 금화 아이템 인덱스
-#define PAYBLE_RUBY			1		// 루브 아이템 인덱스
+#define PAYBLE_RUBY			1		// 루비 아이템 인덱스
 #define PAYBLE_KEY_0		2		// 키 A 아이템 인덱스
 #define PAYBLE_KEY_1		3		// 키 B 아이템 인덱스
 #define PAYBLE_KEY_2		4		// 키 C 아이템 인덱스
@@ -472,7 +472,7 @@ struct FArrayData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lstVal;
+	TArray<int> lstVal;
 };
 
 USTRUCT(BlueprintType)
@@ -481,10 +481,10 @@ struct FArticleData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxItem;
+	int idxItem;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valLevel;
+	int valLevel;
 };
 
 USTRUCT(BlueprintType)
@@ -493,49 +493,49 @@ struct FHeroSaveData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valLevel;
+	int valLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int64 valEXP;
+	int64 valEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lstProfile;
+	TArray<int> lstProfile;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int64> lstPayble;
+	TArray<int64> lstPayble;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lstEquip;
+	TArray<int> lstEquip;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<FArticleData> lstItem;
+	TArray<FArticleData> lstItem;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valStgClear;
+	int valStgClear;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<float> timStgRecord;
+	TArray<float> timStgRecord;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<FArrayData> lstChallenge;
+	TArray<FArrayData> lstChallenge;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSelectStage;
+	int idxSelectStage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EGameModeSection::Type> idxSelectSection;
+	TEnumAsByte<EGameModeSection::Type> idxSelectSection;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> extraAD;
+	TArray<int> extraAD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> extraFree;
+	TArray<int> extraFree;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<FArrayData> lstEvol;
+	TArray<FArrayData> lstEvol;
 
 };
 
@@ -545,10 +545,10 @@ struct FEquipLevelData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valStart;
+	int valStart;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valUpgrade;
+	int valUpgrade;
 };
 
 USTRUCT(BlueprintType)
@@ -557,16 +557,16 @@ struct FEquipClassData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int maxLevel;
+	int maxLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> valNeed;
+	TArray<int> valNeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> valChunk;
+	TArray<int> valChunk;
 };
 
 USTRUCT(BlueprintType)
@@ -575,13 +575,13 @@ struct FGoodsData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valShame;
+	int valShame;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EGoodsSection::Type> secGoods;
+	TEnumAsByte<EGoodsSection::Type> secGoods;
 };
 
 USTRUCT(BlueprintType)
@@ -590,13 +590,13 @@ struct FTeamLevelData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valEXP;
+	int valEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> idxReward;
+	TArray<int> idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> valReward;
+	TArray<int> valReward;
 };
 
 USTRUCT(BlueprintType)
@@ -605,19 +605,19 @@ struct FHeroLevelData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float spdMove;
+	float spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valPower;
+	int valPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valHP;
+	int valHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valMoney;
+	int valMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valTreasure;
+	int valTreasure;
 };
 
 USTRUCT(BlueprintType)
@@ -626,76 +626,76 @@ struct FMainPlayData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxPlayStage;
+	int idxPlayStage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxPlayIndex;
+	int idxPlayIndex;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lvlMainWeapon;
+	int lvlMainWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timMainWeapon;
+	float timMainWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lvlSubWeapon;
+	TArray<int> lvlSubWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<float> timSubWeapon;
+	TArray<float> timSubWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> lvlSubBuff;
+	TArray<int> lvlSubBuff;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timRecover;
+	float timRecover;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> equipWeapon;
+	TArray<int> equipWeapon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> equipBuff;
+	TArray<int> equipBuff;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxFinalBuff;
+	int idxFinalBuff;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int wavNow;
+	int wavNow;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int wavMax;
+	int wavMax;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timPlay;
+	float timPlay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timSpawn;
+	float timSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valMoney;
+	int valMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valKillEnemy;
+	int valKillEnemy;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float valEXP;
+	float valEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valLevel;
+	int valLevel;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxCamera;
+	int idxCamera;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isRebornAD;
+	bool isRebornAD;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isReborn;
+	bool isReborn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		bool isClear;
+	bool isClear;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timIronman;
+	float timIronman;
 };
 
 USTRUCT(BlueprintType)
@@ -704,28 +704,28 @@ struct FMonsterData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float spdMove;
+	float spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float valHP;
+	float valHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EMonsterMoveSection::Type> secMove;
+	TEnumAsByte<EMonsterMoveSection::Type> secMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valPower;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EMonsterAttackSection::Type> secDefAttack;
+	int valPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxDefAttack;
+	TEnumAsByte<EMonsterAttackSection::Type> secDefAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timDefAttack;
+	int idxDefAttack;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
+	float timDefAttack;
 };
 
 USTRUCT(BlueprintType)
@@ -734,34 +734,34 @@ struct FBulletData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSpr;
+	int idxSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strPath;
+	FString strPath;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletDamageSection::Type> secDamage;
+	TEnumAsByte<EBulletDamageSection::Type> secDamage;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletMoveSection::Type> secMove;
+	TEnumAsByte<EBulletMoveSection::Type> secMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletRotateSection::Type> secRot;
+	TEnumAsByte<EBulletRotateSection::Type> secRot;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletBounceHitSection::Type> secBounceHit;
+	TEnumAsByte<EBulletBounceHitSection::Type> secBounceHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletBounceOutSection::Type> secBounceOut;
+	TEnumAsByte<EBulletBounceOutSection::Type> secBounceOut;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletAfterHitSection::Type> secAfterHit;
+	TEnumAsByte<EBulletAfterHitSection::Type> secAfterHit;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EBulletTimeoutSection::Type> secTimeout;
+	TEnumAsByte<EBulletTimeoutSection::Type> secTimeout;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxAfterHit;
+	int idxAfterHit;
 };
 
 USTRUCT(BlueprintType)
@@ -770,19 +770,19 @@ struct FItemData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSprite;
+	int idxSprite;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EItemSection::Type> secItem;
+	TEnumAsByte<EItemSection::Type> secItem;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxSlot;
+	int idxSlot;
 };
 
 USTRUCT(BlueprintType)
@@ -791,55 +791,55 @@ struct FWeaponData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxHeroSpr;
+	int idxHeroSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxWeaponSpr;
+	int idxWeaponSpr;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perPower;
+	float perPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float spdMove;
+	float spdMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timOutMove;
+	float timOutMove;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<EWaeaponAttackSection::Type> secAttack;
+	TEnumAsByte<EWaeaponAttackSection::Type> secAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timAttack;
+	float timAttack;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxbullet; //
+	int idxbullet; //
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int bulSame;
+	int bulSame;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int bulCombo;
+	int bulCombo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timCombo;
+	float timCombo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float valScale;
+	float valScale;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxDual;
+	int idxDual;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxCombine;
+	int idxCombine;
 };
 
 
@@ -849,16 +849,16 @@ struct FBuffData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxIcon;
+	int idxIcon;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float valLevel;
+	float valLevel;
 };
 
 USTRUCT(BlueprintType)
@@ -867,46 +867,46 @@ struct FWaveData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timStart;
+	float timStart;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float timEnd;
+	float timEnd;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idxMonster;
+	int idxMonster;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int maxSpawn;
+	int maxSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valSpawn;
+	int valSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int secSpawn;
+	int secSpawn;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perPower;
+	float perPower;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perSpeed;
+	float perSpeed;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perHP;
+	float perHP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float idxEXP;
+	float idxEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perEXP;
+	float perEXP;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float idxMoney;
+	float idxMoney;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		float perMoney; // 돈 아니면 아이템
+	float perMoney; // 돈 아니면 아이템
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FLinearColor colMonster;
+	FLinearColor colMonster;
 };
 
 USTRUCT(BlueprintType)
@@ -915,16 +915,16 @@ struct FStageData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int valWave;
+	int valWave;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<FWaveData> lstWave;
+	TArray<FWaveData> lstWave;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> idxReward;
+	TArray<int> idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> valReward;
+	TArray<int> valReward;
 };
 
 USTRUCT(BlueprintType)
@@ -933,10 +933,10 @@ struct FSkillListData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TEnumAsByte<ESkillSection::Type> sec;
+	TEnumAsByte<ESkillSection::Type> sec;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int idx;
+	int idx;
 };
 
 USTRUCT(BlueprintType)
@@ -945,16 +945,16 @@ struct FSkillInf0Data
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		UPaperSprite* sprite;
+	UPaperSprite* sprite;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strName;
+	FString strName;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lvlSkill;
+	int lvlSkill;
 };
 
 USTRUCT(BlueprintType)
@@ -963,16 +963,16 @@ struct FEvolutionListData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lstIdxPay;
+	int lstIdxPay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lstValPay;
+	int lstValPay;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lstIdxGet;
+	int lstIdxGet;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		int lstValGet;
+	int lstValGet;
 };
 
 USTRUCT(BlueprintType)
@@ -981,13 +981,13 @@ struct FEvolutionInfoData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		UPaperSprite* sprite;
+	UPaperSprite* sprite;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strNAme;
+	FString strNAme;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		FString strInfo;
+	FString strInfo;
 };
 
 USTRUCT(BlueprintType)
@@ -996,9 +996,9 @@ struct FChallengeInfoData
 	GENERATED_BODY()
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> idxReward;
+	TArray<int> idxReward;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = SkillData)
-		TArray<int> valReward;
+	TArray<int> valReward;
 };
 
